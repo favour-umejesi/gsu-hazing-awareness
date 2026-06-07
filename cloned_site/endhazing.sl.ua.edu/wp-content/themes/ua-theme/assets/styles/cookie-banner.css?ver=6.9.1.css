@@ -4,7 +4,7 @@
     bottom: 0;
     width: 100%;
 
-    background: #ECAA00;
+    background: #EAAA00;
     border-top: 3px solid #ffffff;
     color: #ffffff;
     font: 1rem/1.5rem proxima-nova, sans-serif;
@@ -36,10 +36,10 @@
     margin: 1em 0;
     padding: 6px 12px;
 
-    border: 1px solid #ECAA00;
+    border: 1px solid #EAAA00;
     border-radius: 0;
     background: #ffffff;
-    color: #ECAA00;
+    color: #EAAA00;
     font: 1.25rem/2rem proxima-nova, sans-serif;
     font-weight: 700;
     text-transform: uppercase;

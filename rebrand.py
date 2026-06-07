@@ -464,8 +464,7 @@ def primary_nav_inner(prefix: str) -> str:
         f'<li><a href="{p}hazing-transparency-report/">Transparency Report</a></li>\n'
         f'<li class="ua_menu-item-parent"><a href="{p}about/">{commitment_menu}</a>'
         f"{nav_menu_button('Our Commitment & Community Commitment menu')}"
-        f'<ul><li><a href="{p}about/">Our Commitment</a></li>'
-        f'<li><a href="{p}hazing-prevention-team/">Prevention Team</a></li></ul></li>'
+        f'<ul><li><a href="{p}hazing-prevention-team/">Prevention Team</a></li></ul></li>'
     )
 
 

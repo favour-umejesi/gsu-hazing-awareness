@@ -92,6 +92,25 @@
     });
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+  function initHeroIntro() {
+    document.querySelectorAll('.hero').forEach(function (hero) {
+      var container = hero.querySelector('.container');
+      if (!container) return;
+      hero.classList.add('hero--intro');
+      Array.prototype.forEach.call(container.children, function (el, i) {
+        var tag = el.tagName;
+        if (tag === 'SCRIPT' || tag === 'STYLE') return;
+        el.classList.add('hero-intro-item');
+        el.style.animationDelay = (0.08 + i * 0.12) + 's';
+      });
+    });
+  }
+
+  function boot() {
+    init();
+    initHeroIntro();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+  else boot();
 })();

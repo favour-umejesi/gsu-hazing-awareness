@@ -1,8 +1,13 @@
-# Pretty URLs for Grambling End Hazing static site
+# Pretty URLs for Grambling State Hazing Awareness static site
 DirectoryIndex index.html
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+RewriteRule ^wp-json(/.*)?$ / [R=301,L,NC]
+RewriteRule ^wp-admin(/.*)?$ / [R=301,L,NC]
+RewriteRule ^what-is-hazing/ua-hazing-policy/?$ /what-is-hazing/gsu-hazing-policy/ [R=301,L,NC]
+RewriteRule ^what-is-hazing/ua-code-of-student-conduct/?$ /what-is-hazing/gsu-code-of-student-conduct/ [R=301,L,NC]
 
 RewriteRule ^index\.html%3Fp=6\.html$ / [R=301,L,NE]
 RewriteRule ^index\.html\?p=6(?:\.html)?$ / [R=301,L,NC]
@@ -14,8 +19,8 @@ RewriteRule ^index\.html%3Fp=20\.html$ /what-is-hazing/hazing-statistics/ [R=301
 RewriteRule ^index\.html\?p=20(?:\.html)?$ /what-is-hazing/hazing-statistics/ [R=301,L,NC]
 RewriteRule ^index\.html%3Fp=22\.html$ /what-is-hazing/faq/ [R=301,L,NE]
 RewriteRule ^index\.html\?p=22(?:\.html)?$ /what-is-hazing/faq/ [R=301,L,NC]
-RewriteRule ^index\.html%3Fp=24\.html$ /what-is-hazing/ua-code-of-student-conduct/ [R=301,L,NE]
-RewriteRule ^index\.html\?p=24(?:\.html)?$ /what-is-hazing/ua-code-of-student-conduct/ [R=301,L,NC]
+RewriteRule ^index\.html%3Fp=24\.html$ /what-is-hazing/gsu-code-of-student-conduct/ [R=301,L,NE]
+RewriteRule ^index\.html\?p=24(?:\.html)?$ /what-is-hazing/gsu-code-of-student-conduct/ [R=301,L,NC]
 RewriteRule ^index\.html%3Fp=26\.html$ /what-is-hazing/state-law/ [R=301,L,NE]
 RewriteRule ^index\.html\?p=26(?:\.html)?$ /what-is-hazing/state-law/ [R=301,L,NC]
 RewriteRule ^index\.html%3Fp=30\.html$ /prevent-it/ [R=301,L,NE]
@@ -30,8 +35,8 @@ RewriteRule ^index\.html%3Fp=49\.html$ /hazing-transparency-report/ [R=301,L,NE]
 RewriteRule ^index\.html\?p=49(?:\.html)?$ /hazing-transparency-report/ [R=301,L,NC]
 RewriteRule ^index\.html%3Fp=398\.html$ /hazing-prevention-team/ [R=301,L,NE]
 RewriteRule ^index\.html\?p=398(?:\.html)?$ /hazing-prevention-team/ [R=301,L,NC]
-RewriteRule ^index\.html%3Fp=424\.html$ /what-is-hazing/ua-hazing-policy/ [R=301,L,NE]
-RewriteRule ^index\.html\?p=424(?:\.html)?$ /what-is-hazing/ua-hazing-policy/ [R=301,L,NC]
+RewriteRule ^index\.html%3Fp=424\.html$ /what-is-hazing/gsu-hazing-policy/ [R=301,L,NE]
+RewriteRule ^index\.html\?p=424(?:\.html)?$ /what-is-hazing/gsu-hazing-policy/ [R=301,L,NC]
 RewriteRule ^index\.html%3Fp=507\.html$ /prevent-it/how-to-prevent/ [R=301,L,NE]
 RewriteRule ^index\.html\?p=507(?:\.html)?$ /prevent-it/how-to-prevent/ [R=301,L,NC]
 RewriteRule ^index\.html%3Fp=687\.html$ /posts/2023/2022/alpha-kappa-lambda/ [R=301,L,NE]

@@ -450,8 +450,8 @@ def primary_nav_inner(prefix: str) -> str:
         f"{nav_menu_button('Understanding Hazing menu')}"
         f'<ul>\t<li><a href="{p}what-is-hazing/hazing-statistics/">Hazing Statistics</a></li>\n'
         f'\t<li><a href="{p}what-is-hazing/faq/">FAQ</a></li>\n'
-        f'\t<li><a href="{p}what-is-hazing/ua-hazing-policy/">GSU Hazing Policy</a></li>\n'
-        f'\t<li><a href="{p}what-is-hazing/ua-code-of-student-conduct/">GSU Code of Student Conduct</a></li>\n'
+        f'\t<li><a href="{p}what-is-hazing/gsu-hazing-policy/">GSU Hazing Policy</a></li>\n'
+        f'\t<li><a href="{p}what-is-hazing/gsu-code-of-student-conduct/">GSU Code of Student Conduct</a></li>\n'
         f'\t<li><a href="{p}what-is-hazing/state-law/">State Law</a></li>\n'
         f"</ul>\n</li>\n"
         f'<li class="ua_menu-item-parent"><a href="{p}prevent-it/">Prevention &amp; Education</a>'

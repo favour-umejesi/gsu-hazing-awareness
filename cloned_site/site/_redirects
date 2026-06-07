@@ -12,8 +12,8 @@
 /index.html?p=20.html /what-is-hazing/hazing-statistics/ 301
 /index.html%3Fp=22.html /what-is-hazing/faq/ 301
 /index.html?p=22.html /what-is-hazing/faq/ 301
-/index.html%3Fp=24.html /what-is-hazing/ua-code-of-student-conduct/ 301
-/index.html?p=24.html /what-is-hazing/ua-code-of-student-conduct/ 301
+/index.html%3Fp=24.html /what-is-hazing/gsu-code-of-student-conduct/ 301
+/index.html?p=24.html /what-is-hazing/gsu-code-of-student-conduct/ 301
 /index.html%3Fp=26.html /what-is-hazing/state-law/ 301
 /index.html?p=26.html /what-is-hazing/state-law/ 301
 /index.html%3Fp=30.html /prevent-it/ 301
@@ -28,8 +28,8 @@
 /index.html?p=49.html /hazing-transparency-report/ 301
 /index.html%3Fp=398.html /hazing-prevention-team/ 301
 /index.html?p=398.html /hazing-prevention-team/ 301
-/index.html%3Fp=424.html /what-is-hazing/ua-hazing-policy/ 301
-/index.html?p=424.html /what-is-hazing/ua-hazing-policy/ 301
+/index.html%3Fp=424.html /what-is-hazing/gsu-hazing-policy/ 301
+/index.html?p=424.html /what-is-hazing/gsu-hazing-policy/ 301
 /index.html%3Fp=507.html /prevent-it/how-to-prevent/ 301
 /index.html?p=507.html /prevent-it/how-to-prevent/ 301
 /index.html%3Fp=687.html /hazing-transparency-report/ 301
@@ -82,3 +82,5 @@
 /posts/2025/* /hazing-transparency-report/ 301
 /wp-json/* / 301
 /wp-admin/* / 301
+/what-is-hazing/ua-hazing-policy/ /what-is-hazing/gsu-hazing-policy/ 301
+/what-is-hazing/ua-code-of-student-conduct/ /what-is-hazing/gsu-code-of-student-conduct/ 301

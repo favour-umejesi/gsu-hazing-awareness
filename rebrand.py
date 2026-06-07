@@ -663,6 +663,31 @@ def replace_campus_support_email(content):
     )
 
 
+STUDENT_CONDUCT_LOCATION = "403 Main Street"
+STUDENT_CONDUCT_PHONE = "318-274-7782"
+STUDENT_CONDUCT_MAPS_QUERY = "403+Main+Street+Grambling+State+University"
+STUDENT_CONDUCT_CARD = re.compile(
+    r'(<div id="location-conduct">[\s\S]*?'
+    r'<h2 class="ua_card_title">Office of Student Conduct Resources</h2>\s*)'
+    r'<p><strong>Location:</strong>[^<]*</p>\s*'
+    r'<p><a href="https://www\.google\.com/maps/search/\?api=1&amp;query=[^"]*"[^>]*>'
+    r"<strong>Get directions</strong></a></p>\s*"
+    r'<p><strong>Phone:</strong>\s*<a href="tel:[^"]*">[^<]*</a></p>',
+    re.I,
+)
+
+
+def replace_campus_support_conduct_info(content):
+    """Correct Office of Student Conduct location and phone on Student Support Resources."""
+    replacement = (
+        rf"\1<p><strong>Location:</strong> {STUDENT_CONDUCT_LOCATION}</p>\n\n\n\n"
+        rf'<p><a href="https://www.google.com/maps/search/?api=1&amp;query={STUDENT_CONDUCT_MAPS_QUERY}" '
+        rf'target="_blank" rel="noreferrer noopener"><strong>Get directions</strong></a></p>\n\n\n\n'
+        rf'<p><strong>Phone:</strong> <a href="tel:+13182747782">{STUDENT_CONDUCT_PHONE}</a></p>'
+    )
+    return STUDENT_CONDUCT_CARD.sub(replacement, content)
+
+
 def replace_photography(content):
     """Swap dated or off-brand imagery; broaden alt text away from narrow org framing."""
     content = re.sub(
@@ -1229,6 +1254,7 @@ def process_file(filepath):
     content = replace_our_commitment_content(content, rel)
     content = replace_gsu_hazing_policy_button(content)
     content = replace_campus_support_email(content)
+    content = replace_campus_support_conduct_info(content)
     content = replace_photography(content)
     content = replace_family_students_photo(content, rel)
     content = replace_home_help_section_photo(content, rel)

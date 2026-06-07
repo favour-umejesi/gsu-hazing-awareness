@@ -10,7 +10,7 @@ import glob
 SITE_ROOT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "cloned_site",
-    "endhazing.sl.ua.edu",
+    "site",
 )
 
 UA_SEARCH_TERMS = re.compile(

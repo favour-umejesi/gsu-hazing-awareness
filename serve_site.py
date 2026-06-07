@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Serve the End Hazing static site locally with correct folder URLs."""
+"""Serve the GSU Hazing Awareness & Prevention static site locally."""
 
 import http.server
 import os
 import socketserver
 from pathlib import Path
 
-SITE_DIR = Path(__file__).resolve().parent / "cloned_site" / "endhazing.sl.ua.edu"
+SITE_DIR = Path(__file__).resolve().parent / "cloned_site" / "site"
 PORT = 8080
 
 

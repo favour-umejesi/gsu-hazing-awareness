@@ -7,11 +7,11 @@ import glob
 
 SITE_ROOT = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
-    "cloned_site", "endhazing.sl.ua.edu"
+    "cloned_site", "site"
 )
 
-# Pantone 124 C — official GSU gold (see grambling_marks licensing art sheet)
-GSU_GOLD = "#ECAA00"
+# PMS 124 C — official GSU gold (Visual Identity Color Palette)
+GSU_GOLD = "#EAAA00"
 
 # Headings match www.gram.edu (Signika); body uses Times New Roman (Minion Pro fallback per identity sheet)
 GRAMBLING_FONTS = '''<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,12 @@ GRAMBLING_FONTS = '''<link rel="preconnect" href="https://fonts.googleapis.com">
 
 GRAMBLING_CSS = f'''<style id="grambling-overrides">
 :root {{
-  /* Grambling State University brand colors (PMS 124 C gold, Process Black C) */
+  /* Grambling State University brand colors (Visual Identity Color Palette) */
   --gsu-gold: {GSU_GOLD};
-  --gsu-gold-rgb: 236, 170, 0;
-  --gsu-black: #000000;
+  --gsu-gold-rgb: 234, 170, 0;
+  --gsu-black: #191919;
   --gsu-white: #ffffff;
-  --gsu-gray-dark: #1a1a1a;
+  --gsu-gray-dark: #545454;
   --ua_color-link: var(--gsu-gold) !important;
   --ua_color-link--inverse: var(--gsu-black) !important;
   /* Headings: Signika (www.gram.edu); body: Times New Roman (identity sheet fallback) */

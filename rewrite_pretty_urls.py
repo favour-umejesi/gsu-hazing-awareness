@@ -8,7 +8,7 @@ import re
 import sys
 from pathlib import Path
 
-SITE_ROOT = Path(__file__).resolve().parent / "cloned_site" / "endhazing.sl.ua.edu"
+SITE_ROOT = Path(__file__).resolve().parent / "cloned_site" / "site"
 
 # Home page (front page)
 HOME_PAGE_ID = "6"

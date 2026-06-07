@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit internal links in the static End Hazing site."""
+"""Audit internal links in the static GSU Hazing Awareness site."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-SITE_ROOT = Path(__file__).resolve().parent / "cloned_site" / "endhazing.sl.ua.edu"
+SITE_ROOT = Path(__file__).resolve().parent / "cloned_site" / "site"
 
 SKIP_PARTS = {"/feed/", "wp-json", "/search/"}
 
@@ -52,7 +52,10 @@ def resolve_href(from_file: Path, href: str) -> tuple[str | None, Path | None]:
     path = parsed.path
     if not path:
         return href, from_file.parent
-    target = (from_file.parent / path).resolve()
+    if path.startswith("/"):
+        target = (SITE_ROOT / path.lstrip("/")).resolve()
+    else:
+        target = (from_file.parent / path).resolve()
     try:
         target.relative_to(SITE_ROOT.resolve())
     except ValueError:

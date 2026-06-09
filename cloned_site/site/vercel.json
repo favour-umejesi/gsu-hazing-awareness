@@ -18,12 +18,444 @@
     },
     {
       "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "6"
+        }
+      ],
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "/index.html/",
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "11"
+        }
+      ],
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "17"
+        }
+      ],
+      "destination": "/what-is-hazing/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "20"
+        }
+      ],
+      "destination": "/what-is-hazing/hazing-statistics/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "22"
+        }
+      ],
+      "destination": "/what-is-hazing/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "24"
+        }
+      ],
+      "destination": "/what-is-hazing/gsu-code-of-student-conduct/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "26"
+        }
+      ],
+      "destination": "/what-is-hazing/state-law/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "30"
+        }
+      ],
+      "destination": "/prevent-it/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "40"
+        }
+      ],
+      "destination": "/report-it/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "43"
+        }
+      ],
+      "destination": "/report-it/campus-support-services/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "46"
+        }
+      ],
+      "destination": "/parents-and-family/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "49"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "398"
+        }
+      ],
+      "destination": "/hazing-prevention-team/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "424"
+        }
+      ],
+      "destination": "/what-is-hazing/gsu-hazing-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "507"
+        }
+      ],
+      "destination": "/prevent-it/how-to-prevent/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "687"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "689"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "691"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "693"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "698"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "700"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "703"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "705"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "707"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "709"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "711"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "713"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "715"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "717"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "720"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "722"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "740"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "749"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "765"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "768"
+        }
+      ],
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "p",
+          "value": "800"
+        }
+      ],
+      "destination": "/posts/2026/2026/kappa-alpha-psi/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/violations",
+      "destination": "/hazing-transparency-report/",
       "permanent": true
     },
     {
@@ -37,403 +469,8 @@
       "permanent": true
     },
     {
-      "source": "/index.html%3Fp=6.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=6.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=11.html",
-      "destination": "/about/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=11.html",
-      "destination": "/about/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=17.html",
-      "destination": "/what-is-hazing/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=17.html",
-      "destination": "/what-is-hazing/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=20.html",
-      "destination": "/what-is-hazing/hazing-statistics/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=20.html",
-      "destination": "/what-is-hazing/hazing-statistics/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=22.html",
-      "destination": "/what-is-hazing/faq/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=22.html",
-      "destination": "/what-is-hazing/faq/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=24.html",
-      "destination": "/what-is-hazing/gsu-code-of-student-conduct/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=24.html",
-      "destination": "/what-is-hazing/gsu-code-of-student-conduct/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=26.html",
-      "destination": "/what-is-hazing/state-law/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=26.html",
-      "destination": "/what-is-hazing/state-law/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=30.html",
-      "destination": "/prevent-it/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=30.html",
-      "destination": "/prevent-it/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=40.html",
-      "destination": "/report-it/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=40.html",
-      "destination": "/report-it/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=43.html",
-      "destination": "/report-it/campus-support-services/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=43.html",
-      "destination": "/report-it/campus-support-services/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=46.html",
-      "destination": "/parents-and-family/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=46.html",
-      "destination": "/parents-and-family/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=49.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=49.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=398.html",
-      "destination": "/hazing-prevention-team/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=398.html",
-      "destination": "/hazing-prevention-team/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=424.html",
+      "source": "/what-is-hazing/ua-hazing-policy",
       "destination": "/what-is-hazing/gsu-hazing-policy/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=424.html",
-      "destination": "/what-is-hazing/gsu-hazing-policy/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=507.html",
-      "destination": "/prevent-it/how-to-prevent/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=507.html",
-      "destination": "/prevent-it/how-to-prevent/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=687.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=687.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=689.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=689.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=691.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=691.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=693.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=693.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=698.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=698.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=700.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=700.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=703.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=703.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=705.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=705.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=707.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=707.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=709.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=709.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=711.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=711.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=713.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=713.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=715.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=715.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=717.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=717.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=720.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=720.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=722.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=722.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=740.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=740.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=749.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=749.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=765.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=765.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=768.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=768.html",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html%3Fp=800.html",
-      "destination": "/posts/2026/2026/kappa-alpha-psi/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html?p=800.html",
-      "destination": "/posts/2026/2026/kappa-alpha-psi/",
-      "permanent": true
-    },
-    {
-      "source": "/posts/category/*",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/posts/2021/*",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/posts/2022/*",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/posts/2023/*",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/posts/2024/*",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/posts/2025/*",
-      "destination": "/hazing-transparency-report/",
-      "permanent": true
-    },
-    {
-      "source": "/wp-json/*",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/wp-admin/*",
-      "destination": "/",
       "permanent": true
     },
     {
@@ -442,8 +479,53 @@
       "permanent": true
     },
     {
+      "source": "/what-is-hazing/ua-code-of-student-conduct",
+      "destination": "/what-is-hazing/gsu-code-of-student-conduct/",
+      "permanent": true
+    },
+    {
       "source": "/what-is-hazing/ua-code-of-student-conduct/",
       "destination": "/what-is-hazing/gsu-code-of-student-conduct/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/category/:path*",
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2021/:path*",
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2022/:path*",
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2023/:path*",
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2024/:path*",
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/posts/2025/:path*",
+      "destination": "/hazing-transparency-report/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-json/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/",
       "permanent": true
     }
   ]

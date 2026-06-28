@@ -1,8 +1,0 @@
-# Netlify: enable clean URLs so /report-it/ works without index.html in the bar.
-# Legacy WordPress URLs are redirected via _redirects in this folder.
-
-[build]
-  publish = "."
-
-[build.processing.html]
-  pretty_urls = true

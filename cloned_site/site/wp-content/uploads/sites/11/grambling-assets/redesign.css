@@ -906,3 +906,94 @@ p { margin: 0; }
 .search-result-title a { color: var(--gsu-black); text-decoration: none; }
 .search-result-title a:hover { color: var(--gsu-red); text-decoration: underline; }
 .search-result-snippet { margin: 8px 0 0; color: var(--text-secondary); font-size: 16px; line-height: 1.5; }
+
+/* =====================================================================
+   MOTION SYSTEM  —  Framer-Motion-style animations (progressive enhancement)
+   ---------------------------------------------------------------------
+   Hidden / animated states apply ONLY when JS adds `.has-anim` to <html>,
+   and ONLY when the user has not requested reduced motion. The page is
+   therefore fully visible and usable if JS, the motion engine, or the CDN
+   fails. Scroll-reveal slide/spring is driven by the Motion library
+   (motion.dev — the vanilla-JS sibling of Framer Motion); the small CSS
+   below covers the resting states, the native fallback, page transitions
+   and all hover / press micro-interactions.
+   ===================================================================== */
+
+:root {
+  --ease-out: cubic-bezier(.22, .61, .36, 1);   /* smooth, modern decel */
+  --ease-soft: cubic-bezier(.4, 0, .2, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* ---------- Scroll-reveal resting states ----------
+     Only opacity is controlled in CSS; the translate/spring is applied
+     inline by the Motion engine so it never fights the hover transforms
+     below. If Motion is unavailable, `.no-motion` provides a clean fade. */
+  .has-anim [data-reveal] { opacity: 0; }
+  .has-anim [data-reveal].is-revealed { opacity: 1; }
+  .has-anim.no-motion [data-reveal] {
+    transition: opacity .5s var(--ease-out);
+    transition-delay: var(--reveal-delay, 0s);
+  }
+
+  /* ---------- Button & link micro-interactions ---------- */
+  .btn {
+    transition: background .15s ease, color .15s ease, border-color .15s ease,
+                transform .12s var(--ease-soft), box-shadow .2s ease;
+  }
+  .btn:active { transform: translateY(0) scale(.97); }
+
+  .link-arrow { transition: color .15s ease, gap .2s var(--ease-out); }
+  .link-arrow::after { transition: transform .2s var(--ease-out); }
+
+  .nav-search { transition: background .15s ease, color .15s ease, transform .15s var(--ease-out); }
+  .social-row a { transition: background .15s ease, transform .2s var(--ease-out); }
+  .violation-year__link::after { transition: transform .2s var(--ease-out); }
+
+  /* ---------- Hover affordances (pointer devices only) ---------- */
+  @media (hover: hover) {
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, .12); }
+    .btn-outline-light:hover, .btn-outline-dark:hover, .btn-outline-gold:hover { box-shadow: none; }
+
+    .link-arrow:hover { gap: 12px; }
+    .link-arrow:hover::after { transform: translateX(3px); }
+    .violation-year__link:hover::after { transform: translateX(4px); }
+    .nav-search:hover { transform: translateY(-1px); }
+    .social-row a:hover { transform: translateY(-3px) scale(1.06); }
+
+    /* Card lift — Motion clears its inline transform once revealed, so
+       these hover transforms apply cleanly with no specificity war. */
+    .action-card, .feature-card, .step-card, .list-card, .spectrum-item,
+    .sev-card, .quote-card, .info-callout, .qr-card, .record-card {
+      transition: transform .28s var(--ease-out), box-shadow .28s var(--ease-out),
+                  border-color .28s var(--ease-out), background .15s ease;
+    }
+    .action-card:hover, .feature-card:hover, .step-card:hover, .list-card:hover,
+    .spectrum-item:hover, .sev-card:hover, .quote-card:hover, .info-callout:hover,
+    .qr-card:hover, .record-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 34px rgba(0, 0, 0, .12);
+      border-color: rgba(234, 169, 33, .5);
+    }
+    .resource-card { transition: transform .28s var(--ease-out), background .15s ease; }
+    .resource-card:hover { transform: translateY(-4px); }
+
+    /* Gentle image zoom on feature / media cards */
+    .feature-card { overflow: hidden; }
+    .feature-card .feature-img { transition: transform .6s var(--ease-out); }
+    .feature-card:hover .feature-img { transform: scale(1.05); }
+
+    /* Animated dropdown reveal (desktop only) */
+    @media (min-width: 761px) {
+      .subnav {
+        display: block; opacity: 0; visibility: hidden;
+        transform: translateY(8px) scale(.99); transform-origin: top center;
+        transition: opacity .18s var(--ease-out), transform .18s var(--ease-out), visibility .18s;
+      }
+      .nav-item:hover .subnav, .nav-item:focus-within .subnav {
+        opacity: 1; visibility: visible; transform: none;
+      }
+    }
+  }
+}

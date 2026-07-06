@@ -178,13 +178,15 @@ p { margin: 0; }
 }
 .subnav a:hover { background: var(--gsu-gold); color: #000; }
 
-.nav-search {
-  display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--gsu-charcoal);
-  border: 2px solid var(--gsu-black); border-radius: 999px; padding: 9px 22px; font-family: var(--font-condensed);
-  font-weight: 600; font-size: 15px; letter-spacing: .5px;
+/* Scoped under .main-nav so these win over `.main-nav > a` (which sets font-size:17px). */
+.main-nav .nav-search {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0;
+  background: transparent; color: var(--gsu-black); border: none; border-radius: 0;
+  width: auto; height: auto; padding: 6px; flex-shrink: 0;
+  font-family: var(--font-condensed); font-weight: 600; font-size: 0; letter-spacing: .5px;
 }
-.nav-search:hover { background: var(--gsu-black); color: #fff; }
-.nav-search .icon { width: 16px; height: 16px; }
+.main-nav .nav-search:hover { background: transparent; color: #fff; }
+.main-nav .nav-search .icon { width: 22px; height: 22px; }
 
 /* Inline search panel */
 .search-panel {
@@ -841,7 +843,10 @@ p { margin: 0; }
   .main-nav.open > a {
     width: 100%; min-height: 44px; padding: 10px 0;
   }
-  .main-nav.open .nav-search { width: 100%; justify-content: center; margin-top: 6px; }
+  .main-nav.open .nav-search {
+    width: 100%; height: auto; justify-content: center; gap: 8px;
+    padding: 12px 0; font-size: 15px; margin-top: 6px;
+  }
   .main-nav.open .subnav {
     position: static; display: block; background: transparent; box-shadow: none;
     border-top: none; padding: 4px 0 10px 16px; min-width: 0;
